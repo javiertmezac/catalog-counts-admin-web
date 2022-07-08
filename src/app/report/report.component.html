@@ -1,0 +1,43 @@
+<div>
+  <div><h2>Reportes</h2></div>
+
+  <div *ngIf="errorMessage">{{ errorMessage }}</div>
+
+  <div class="row mb-2">
+    <label class="col-md-2 col-form-label" for="periodId">Periodos:</label>
+    <div class="col-md-8">
+      <select id="periodId">
+        <option *ngFor="let p of periodList">
+          {{ p.description }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <table class="table table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th>Periodo</th>
+        <th>Rama / Mision</th>
+        <th>Reporte</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>junio - junio 2022</td>
+        <td>Reforma</td>
+        <td>ver reporte</td>
+      </tr>
+      <tr>
+        <td>junio - junio 2022</td>
+        <td>Obrera</td>
+        <td>ver reporte</td>
+      </tr>
+      <tr>
+        <td>junio - junio 2022</td>
+        <td>Mexico</td>
+        <td>ver reporte</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

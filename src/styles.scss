@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-  background-color: grayscale($color: #000050);
-  color: silver;
-}
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+// body {
+//   background-color: #073642;
+//   color: #93a1a1;
+// }
